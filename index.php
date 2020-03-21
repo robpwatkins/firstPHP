@@ -1,6 +1,14 @@
 <?php
 
-$names = ['BertP', 'Rob', 'Brian'];
-$animals = ['kangaroo', 'rabbit', 'turtle', 'fox', 'kitty'];
+$task = [
+  'title' => 'todo it',
+  'due' => 'Monday',
+  'assigned_to' => 'BertP',
+  'completed' => 'nope'
+];
+
+// var_dump($task);
+
+
 
 require 'index.view.php';

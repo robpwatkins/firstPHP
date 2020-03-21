@@ -16,13 +16,11 @@
 <body>
   
     <ul>
-      <?php foreach ($names as $name) : ?>
-        <li><?= $name; ?></li>
-      <?php endforeach; ?>
-      <?php foreach ($animals as $animal) : ?>
-        <li><?= $animal; ?></li>
+      <?php foreach ($task as $key => $val) : ?>
+        <li><strong><?= $key; ?></strong> <?= $val; ?></li>
       <?php endforeach; ?>
     </ul>
+    
 
 </body>
 </html>
