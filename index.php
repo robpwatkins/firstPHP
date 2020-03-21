@@ -4,7 +4,7 @@ $task = [
   'title' => 'todo it',
   'due' => 'Monday',
   'assigned_to' => 'BertP',
-  'completed' => 'nope'
+  'completed' => true
 ];
 
 // var_dump($task);
