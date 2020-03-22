@@ -14,28 +14,18 @@
   </style>
 </head>
 <body>
-  
-  <h1>Task for the Day</h1>
-    <ul>
+  <ul>
+    <?php foreach ($tasks as $task) : ?>
       <li>
-        <strong>Name: </strong> <?=$task['title']; ?>
-      </li>
-      <li>
-        <strong>Due: </strong> <?=$task['due']; ?>
-      </li>
-      <li>
-        <strong>Person Assigned: </strong> <?=$task['assigned_to']; ?>
-      </li>
-      <li>
-        <strong>Status: </strong>
-        <?php if ($task['completed']) : ?>
-          <span class="icon">&#9989</span>
-        <?php else : ?>
-          <span class="icon">Narp.</span>
+        <?php if ($task->completed) : ?>
+          <strike><?= $task->description; ?></strike>
+        <?php else: ?>
+          <?= $task->description; ?>
         <?php endif; ?>
       </li>
-    </ul>
-    
+    <?php endforeach; ?>
+  </ul>
+      
 
 </body>
 </html>
