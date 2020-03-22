@@ -1,14 +1,15 @@
 <?php
 
-$task = [
-  'title' => 'todo it',
-  'due' => 'Monday',
-  'assigned_to' => 'BertP',
-  'completed' => true
-];
+require 'functions.php';
 
-// var_dump($task);
+$animals = ['dog', 'cat'];
 
+// dd($animals);
 
+if (canEnter(35)) {
+  echo 'come on in';
+} else {
+  echo 'get on outta heeaaaaaa';
+}
 
 require 'index.view.php';
